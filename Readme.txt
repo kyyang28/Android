@@ -66,9 +66,16 @@ git checkout v1
 
 
 /*
- *	@description  Android LED App program
+ *	@description  Android LED App program to light up four on-board LEDs of tiny4412
  *	@version 	v1 - android studio generated program
  *					v2 - added button and checkboxes 
+ *					v3 - add onClick methods for button and checkboxes
+ *
+ *	@ProgramSteps 	- Step 1: Modify activity_main.xml to add one Button widget and four Checkboxes
+ *							- Step 2: Modify MainActivity.java to create objects of Button and Checkboxes. To link the objects to widget descriptions in activity_main.xml, use findViewById(R.id.BUTTON)
+ *										function, then call the setOnClickListener() function to perform certain operations. For checkbox, onCheckboxClicked() method is provided to perform the onClick operations
+ *										of four leds.
+ *							Details of program can be downloaded from Github command above.
  */
 1. 	APP_0001_LEDDemo
 	

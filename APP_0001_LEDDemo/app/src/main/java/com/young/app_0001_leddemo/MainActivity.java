@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
+import com.young.hardwareLibary.*;
+
 public class MainActivity extends AppCompatActivity {
 
     private boolean ledStatus = false;
@@ -108,6 +110,10 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
+
+                /* Instantiate a new object will invoke the program in the static block, which is loadlibrary() method */
+                HardwareControl hardwareControl = new HardwareControl();
+
                 ledStatus = !ledStatus;
 
                 if (ledStatus) {
