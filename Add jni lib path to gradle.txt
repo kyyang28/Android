@@ -1,0 +1,11 @@
+
+In order to link the hardware library in Android Studio, firstly, we need to copy the libhardwareControl.so file to D:\Tech\Android\3-Android\Apps\APP_0001_LEDDemo\app\libs\armeabi (create a new folder called armeabi) and copy libhardwareControl.so file into armeabi folder, then modify build.gradle (Module: app) file, add the following lines into it.
+
+
+	sourceSets {
+	    main {
+	        jniLibs.srcDirs = ['libs']
+	    }
+	}
+
+Having done so, re-build the program (click on the green triangle)
